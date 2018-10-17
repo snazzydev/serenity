@@ -1,0 +1,57 @@
+.header {
+  position: relative;
+  height: 120vh;
+  width: 100%;
+  //   background-color: $color-grey-light-1;
+  //   background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  background-image: linear-gradient(
+    to right bottom,
+    #232323,
+    #1f1e26,
+    #191a29,
+    #11162d,
+    #041230
+  );
+
+  clip-path: polygon(0 0, 100% 0, 100% 120vh, 0% 140vh);
+
+  &__circle {
+    height: 120vh;
+    width: 70%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    clip-path: ellipse(750px 900px at 75% 50%);
+    z-index: -1;
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 3.5s;
+    animation-fill-mode: backwards;
+  }
+
+  //   LOGO
+  &__logo {
+    width: 60rem;
+    // border: 3px dashed LimeGreen;
+
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 3.5s;
+    animation-fill-mode: backwards;
+
+    @include respond(phone) {
+      width: 40rem;
+    }
+  }
+}
+
+.header-content {
+  @include centering;
+  width: 100%;
+  // border: 3px dashed darkcyan;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

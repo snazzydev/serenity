@@ -1,0 +1,24 @@
+.content-about {
+  // padding: 10rem;
+  // border: 3px solid darkkhaki;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+
+  &__img {
+    width: 60rem;
+    // border: 3px dashed darkcyan;
+    padding: 5rem;
+  }
+
+  &__info {
+    padding: 10rem;
+    // border: 3px dashed orangered;
+  }
+
+  &__text {
+    font-size: $default-text-size;
+  }
+}

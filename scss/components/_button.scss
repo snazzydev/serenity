@@ -1,0 +1,38 @@
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2rem;
+    display: inline-block;
+    color: $color-1;
+    padding: 1.8rem 6rem;
+    border-radius: 10rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 3px solid $color-1;
+    backface-visibility: hidden;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem $shadow-4;
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.3rem 1rem $shadow-4;
+  }
+
+  &--main {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
+  }
+
+  &--orange {
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,52 @@
+// FONTS
+
+@font-face {
+  font-family: Adam;
+  font-display: auto;
+  src: url("../assets/fonts/Adam.otf");
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.heading-box {
+  // border: 3px dashed blue;
+  text-align: center;
+  display: inline-block;
+  // position: absolute;
+  // top: 25%;
+  // left: 10%;
+}
+
+.primary-heading {
+  font-size: 12rem;
+  font-family: "Adam", sans-serif;
+  font-weight: 100;
+  color: $color-white;
+  text-shadow: 0 0.5rem 1rem $shadow-8;
+
+  &--top {
+    display: block;
+  }
+
+  &--header {
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
+  }
+
+  &--info {
+    text-align: center;
+  }
+}
+
+.secondary-heading {
+  // font-family: "Adam", sans-serif;
+  font-size: 5rem;
+
+  &__strong {
+    font-weight: 700;
+  }
+}

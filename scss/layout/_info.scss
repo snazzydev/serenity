@@ -1,0 +1,24 @@
+.content-we {
+  //   border: 3px dashed orangered;
+
+  //   padding: 10rem;
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 114rem;
+  margin: 0 auto;
+
+  &__img {
+    // border: 3px dashed deepskyblue;
+    width: 60rem;
+  }
+
+  &__text {
+    text-align: center;
+    // border: 3px dashed yellowgreen;
+    font-size: $default-text-size;
+    color: $color-white;
+  }
+}
