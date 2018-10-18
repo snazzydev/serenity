@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
 
-  //   border: 3px dashed DodgerBlue;
+  // border: 3px dashed DodgerBlue;
   font-family: "Adam", sans-serif;
   z-index: 9999;
 
@@ -15,6 +15,11 @@
   animation-duration: 1s;
   animation-delay: 3s;
   animation-fill-mode: backwards;
+
+  @include for-phone-only {
+    padding: 0;
+    justify-content: center;
+  }
 }
 
 .brand {
@@ -28,10 +33,14 @@
     letter-spacing: 2px;
     text-shadow: 0 0.5rem 1rem $shadow-8;
   }
+
+  @include for-phone-only {
+    display: none;
+  }
 }
 
 .main-nav {
-  //   border: 3px solid orangered;
+  // border: 3px solid orangered;
   list-style: none;
   display: flex;
 
@@ -48,6 +57,10 @@
     border-bottom: 2px solid transparent;
     transition: all 0.4s;
     text-shadow: 0 0.5rem 1rem $shadow-6;
+
+    @include for-phone-only {
+      margin: 0;
+    }
 
     &:hover {
       transform: translateY(-5px);

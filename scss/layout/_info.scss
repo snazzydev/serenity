@@ -10,9 +10,19 @@
   max-width: 114rem;
   margin: 0 auto;
 
+  @include for-phone-only {
+    height: 45rem;
+    justify-content: space-between;
+  }
+
   &__img {
     // border: 3px dashed deepskyblue;
     width: 60rem;
+
+    @include for-phone-only {
+      width: 35rem;
+      margin-bottom: 6rem;
+    }
   }
 
   &__text {
@@ -20,5 +30,10 @@
     // border: 3px dashed yellowgreen;
     font-size: $default-text-size;
     color: $color-white;
+
+    @include for-phone-only {
+      padding: 2rem;
+      font-size: 2rem;
+    }
   }
 }

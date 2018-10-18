@@ -13,7 +13,7 @@
     #041230
   );
 
-  clip-path: polygon(0 0, 100% 0, 100% 120vh, 0% 140vh);
+  // clip-path: polygon(0 0, 100% 0, 100% 120vh, 0% 140vh);
 
   &__circle {
     height: 120vh;
@@ -29,6 +29,10 @@
     animation-duration: 1s;
     animation-delay: 3.5s;
     animation-fill-mode: backwards;
+
+    @include for-phone-only {
+      display: none;
+    }
   }
 
   //   LOGO
@@ -41,8 +45,8 @@
     animation-delay: 3.5s;
     animation-fill-mode: backwards;
 
-    @include respond(phone) {
-      width: 40rem;
+    @include for-phone-only {
+      display: none;
     }
   }
 }
@@ -54,4 +58,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @include for-phone-only {
+    flex-direction: column;
+    margin-top: -8rem;
+  }
 }

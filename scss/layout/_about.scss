@@ -7,15 +7,29 @@
   max-width: 80%;
   margin: 0 auto;
 
+  @include for-phone-only {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   &__img {
     width: 60rem;
     // border: 3px dashed darkcyan;
     padding: 5rem;
+
+    @include for-phone-only {
+      padding: 0rem 10rem;
+    }
   }
 
   &__info {
     padding: 10rem;
     // border: 3px dashed orangered;
+
+    @include for-phone-only {
+      padding: 5rem 2rem;
+      padding: 2rem 2rem 5rem 2rem;
+    }
   }
 
   &__text {

@@ -56,5 +56,9 @@
     white-space: nowrap;
     opacity: 0.2;
     animation: pulse 2s linear alternate infinite;
+
+    @include for-phone-only {
+      display: none;
+    }
   }
 }

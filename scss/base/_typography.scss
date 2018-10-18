@@ -26,6 +26,10 @@ body {
   color: $color-white;
   text-shadow: 0 0.5rem 1rem $shadow-8;
 
+  @include for-phone-only {
+    font-size: 10rem;
+  }
+
   &--top {
     display: block;
   }
